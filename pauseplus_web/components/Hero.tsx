@@ -58,7 +58,7 @@ const Hero = () => {
             words="Step away from digital noise and enjoy mindful breaks."
           />
         </div>
-        <a href="#">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdhOwK2g3Q2QIcx5yn0Brc4lTS0dASoq54WlwnRnthretVNiA/viewform?usp=sharing">
           <MagicButton 
           title = "Apply for Alpha Testing"
           icon = {<FaLocationArrow/>}

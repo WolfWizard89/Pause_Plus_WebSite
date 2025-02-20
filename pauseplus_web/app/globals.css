@@ -76,6 +76,9 @@
   button {
     @apply active:outline-none;
   }
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 @layer utilities {

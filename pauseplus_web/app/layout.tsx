@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "PausePlus Web",
+  title: "PausePlus",
   description: "PausePlus the best way to pause your social media usage",
 };
 
