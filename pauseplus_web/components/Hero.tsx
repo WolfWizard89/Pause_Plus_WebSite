@@ -14,7 +14,7 @@ const SpaceMono = localFont({
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36 h-[40rem] relative rounded-md ">
+    <div className="pb-20 pt-36 h-full relative rounded-md ">
       <div>
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
@@ -58,11 +58,12 @@ const Hero = () => {
             words="Step away from digital noise and enjoy mindful breaks."
           />
         </div>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdhOwK2g3Q2QIcx5yn0Brc4lTS0dASoq54WlwnRnthretVNiA/viewform?usp=sharing">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdhOwK2g3Q2QIcx5yn0Brc4lTS0dASoq54WlwnRnthretVNiA/viewform?usp=sharing" className="flex justify-center items-center">
           <MagicButton 
           title = "Apply for Alpha Testing"
           icon = {<FaLocationArrow/>}
           position = "right"
+          
           />
         </a>
       </div>

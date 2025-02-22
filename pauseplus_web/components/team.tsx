@@ -14,7 +14,7 @@ const team = () => {
       quote:
         "The frontend is where creativity meets logic. We focus on delivering responsive, accessible, and engaging user experiences that make every interaction smooth and delightful.",
       name: "Pesandu Nethmitha",
-      designation: "Taem Member | Frontend Developer",
+      designation: "Team Member | Frontend Developer",
       src: "/pesandu.jpg",
     },
     {

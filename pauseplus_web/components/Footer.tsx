@@ -4,7 +4,7 @@ import { FaEnvelope, FaFacebook, FaInstagram } from 'react-icons/fa'
 
 const Footer = () => {
   return (
-    <div>
+    <div className='w-full'>
        <BackgroundBeamsWithCollision>
       <div className='flex flex-col justify-center items-center mt-20'>
         <h4 className='text-white-100 text-3xl'>Contact Us</h4>
