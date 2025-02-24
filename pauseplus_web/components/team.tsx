@@ -22,28 +22,28 @@ const team = () => {
         "The backend is the engine that powers the entire system. We focus on performance, security, and seamless data flow, ensuring the project runs smoothly from behind the scenes",
       name: "Nimesha Sachethani",
       designation: "Team Lead | Backend Developer",
-      src: "/female.jpg",
+      src: "/nimesha.jpg",
     },
     {
       quote:
         "Bridging the gap between design and technology, we create interfaces that not only work flawlessly but also feel intuitive. Every detail matters in delivering an exceptional user journey.",
-      name: "Sandali Matheesha",
+      name: "Sadali Matheesha",
       designation: "Team Member | Frontend Developer",
-      src: "/female.jpg",
+      src: "/Sadali.jpg",
     },
     {
       quote:
         "Behind every smooth user experience is a robust backend. We build scalable, efficient systems that ensure everything works reliably—no matter how complex the task",
       name: "Rusith Renuja",
       designation: "Team Member | Backend Developer",
-      src: "/male.jpg",
+      src: "/rusith.jpg",
     },
     {
       quote:
         "Design meets functionality on the frontend. We turn complex ideas into simple, user-friendly interfaces that bring the project to life—one component at a time.",
       name: "Movith Gunawardhana",
       designation: "Team Member | Frontend Developer",
-      src: "/male.jpg",
+      src: "/movith.jpg",
     },
   ];
 

@@ -17,6 +17,9 @@ const Footer = () => {
             <p className="text-white-100 text-center">
               © 2024 - 2025 PausePlus. All rights reserved.
             </p>
+            <p className="text-white-100 text-center mt-1">
+              pauseplus.apex@gmail.com
+            </p>
           </div>
       </div>
     </BackgroundBeamsWithCollision>

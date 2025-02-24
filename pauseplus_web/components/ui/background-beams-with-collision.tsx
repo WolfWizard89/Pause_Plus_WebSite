@@ -115,7 +115,19 @@ const CollisionMechanism = React.forwardRef<
     };
   }
 >(({ parentRef, containerRef, beamOptions = {} }, ref) => {
-  const beamRef = useRef<HTMLDivElement>(null);
+  // Replace beamRef with internalRef and merge with forwarded ref
+  const internalRef = useRef<HTMLDivElement>(null);
+  const setRefs = (el: HTMLDivElement) => {
+    internalRef.current = el;
+    if (ref) {
+      if (typeof ref === "function") {
+        ref(el);
+      } else {
+        (ref as React.MutableRefObject<HTMLDivElement | null>).current = el;
+      }
+    }
+  };
+
   const [collision, setCollision] = useState<{
     detected: boolean;
     coordinates: { x: number; y: number } | null;
@@ -129,12 +141,12 @@ const CollisionMechanism = React.forwardRef<
   useEffect(() => {
     const checkCollision = () => {
       if (
-        beamRef.current &&
+        internalRef.current &&
         containerRef.current &&
         parentRef.current &&
         !cycleCollisionDetected
       ) {
-        const beamRect = beamRef.current.getBoundingClientRect();
+        const beamRect = internalRef.current.getBoundingClientRect();
         const containerRect = containerRef.current.getBoundingClientRect();
         const parentRect = parentRef.current.getBoundingClientRect();
 
@@ -177,7 +189,7 @@ const CollisionMechanism = React.forwardRef<
     <>
       <motion.div
         key={beamKey}
-        ref={beamRef}
+        ref={setRefs}
         animate="animate"
         initial={{
           translateY: beamOptions.initialY || "-200px",
